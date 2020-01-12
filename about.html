@@ -14,7 +14,7 @@
         Hashir's Page
     </title>
 <style>
-         @media (min-width: 481px){
+        @media (min-width: 481px){
             body{
             background: url(images/image2.jpg) no-repeat center;
             background-size: auto auto;
@@ -26,8 +26,14 @@
             .container{
             background-color: black;
             padding: 30px;
-            margin-top: 200px;
+            margin-top: 50px;
         }
+        img{
+                border-radius: 50%;
+            }
+            .black{
+              background-color: black;
+            }
         }
         @media (max-width: 480px){
             body{
@@ -43,8 +49,14 @@
             .container{
             background-color: transparent;
             padding: 30px;
-            margin-top: 200px;
+            margin-top: 50px;
         }   
+            .picture{
+                background: url(images/pic.jpg);
+                border-radius: 50%;
+                background-size: auto auto;
+                position: middle;
+            }
         }
         p, h2{
             color: white;
@@ -54,7 +66,7 @@
     
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light black">
             <a class="navbar-brand" style="color: white" href="index.html">About Me</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigatin">
               <span class="navbar-toggler-icon"></span>
@@ -73,11 +85,18 @@
               </ul>
             </div>
           </nav>
+          <div class=" ml-5 mt-5">
+            <img src='./images/pic.jpg' height="200" width="200">
+        </div>
           <div class="container">
+              <div class="border-bottom border-primary font-weight-light">
               <h2>About Me</h2>
-              <p>
-                    Hi there, I hope you know my name already, if not, then i'll state it for you, it's Hashir Hameed Niazi. I am a first year undergrad student of Zakir Hussain College of Engineering and Technology under the branch, Computer Engineering. I am always moved by the motive of coding, so if you have any idea or program in mind, feel free to ask. : )
+            </div>
+            <div class="mt-2">
+              <p class="font-weight-light">
+                    Hi there, I hope you know my name already, if not, then i'll state it for you, it's Hashir Hameed Niazi. I am a first year undergrad student of <span class="font-weight-bold">Zakir Hussain College of Engineering and Technology, Aligarh Muslim University, Aligarh, (ZHCET, AMU)</span> under the branch, <span class="font-weight-bold">Computer Engineering</span>. I am always fascinated by the sole motive of programming, so if <span class="font-weight-bolder">you have any idea or a project that needs to be done</span>, feel free to contact me <a href="contact.html" class="font-weight-bold">Here!</a>. 
               </p>
+            </div>
           </div>
           
 

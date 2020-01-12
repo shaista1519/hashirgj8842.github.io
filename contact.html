@@ -20,20 +20,24 @@
             background-size: auto auto;
             background-color: black;
         }
-        nav{
-                background-color: turquoise;
-            }
             .container{
-            background-color: black;
+              background-color: black;
             padding: 30px;
-            margin-top: 200px;
+            margin-top: 50px;
         }
+        img{
+                border-radius: 50%;
+            }
+            .black{
+              background-color: black;
+            }
         }
         @media (max-width: 480px){
             body{
             background: url(images/mobile-image.jpg) no-repeat center;
             background-size: 100% 100%;
             background-color: black;
+
         }
             nav{
                 background-color: transparent;
@@ -42,43 +46,56 @@
             .container{
             background-color: transparent;
             padding: 30px;
-            margin-top: 200px;
+            margin-top: 100px;
         }   
+            .picture{
+                background: url(images/pic.jpg);
+                border-radius: 50%;
+                background-size: auto auto;
+                position: middle;
+            }
         }
-        ul, h2{
+        li, h2{
             color: white;
         }
         
     </style>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light black">
             <a class="navbar-brand" href="index.html" style="color: white">Contact Me</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigatin">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon" style="background-color: white;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a style="color: white" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a style="color: white">
+                    <a style="color: white" class="nav-link mr-auto" href="index.html">Home <span class="sr-only">(current)</span></a style="color: white">
                 </li>
                 <li class="nav-item">
-                  <a style="color: white" class="nav-link" href="#">Projects</a>
+                  <a style="color: white" class="nav-link mr-auto" href="#">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a style="color: white" class="nav-link" href="about.html">About Me</a>
+                  <a style="color: white" class="nav-link mr-auto" href="about.html">About Me</a>
                 </li>
               </ul>
             </div>
           </nav>
-          <div class="container">
+          <div class=" ml-5 mt-5">
+              <img src='./images/pic.jpg' height="200" width="200">
+          </div>
+          <div class="container bg-black">
+            <div class="border-bottom border-primary">
             <h2>Contact Me:</h2>
+          </div>
+            <div class="mt-2 font-weight-light">
               <ul>
                   <li>WhatsApp Number = +91 75006 60776</li>
                   <li>Personal Number = +91 75006 60776</li>
                   <li>Instagram Account = instagram.com/hashir_hameed_niazi</li>
                   <li>Email = hameedhashirniazi@gmail.com</li>
               </ul>
+            </div>
         </div>
 
     <!-- Optional JavaScript -->
