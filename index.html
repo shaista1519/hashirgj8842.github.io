@@ -22,6 +22,61 @@
             margin-right: 200px;
             justify-content: center;
         }
+        .flaxbox .extra{
+            background: url(images/pic.jpg) no-repeat center;
+            background-size: auto auto;
+            opacity: 1;
+        }
+        .flaxbox .extra:hover{
+            background: url(images/pic.jpg) no-repeat center;
+            background-size: auto auto;
+            opacity: 0.5;
+        } 
+        span{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: white;
+            font-weight: 900;
+            opacity: 1.0;
+        }
+        @media (min-width: 481px){
+            body{
+            background: url(images/image2.jpg) no-repeat center;
+            background-size: auto auto;
+            background-color: black;
+        }
+        .flaxbox a{
+            border-radius: 50%;
+            background-color: black;
+            margin: 50px;
+            padding: 50px;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            margin-top: 150px;
+            padding-top: 75px;
+            opacity: 1;
+        }
+        .flaxbox a:hover{
+            border-radius: 50%;
+            background-color: lightseagreen;
+            margin: 50px;
+            padding: 50px;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            margin-top: 150px;
+            padding-top: 75px;
+            opacity: 0.5;
+            color: black;
+        }
+        }
+        @media (max-width: 480px){
+            body{
+            background: url(images/mobile-image.jpg) no-repeat center;
+            background-size: 100% 100%;
+            background-color: black;
+        }   
         .flaxbox a{
             border-radius: 50%;
             background-color: transparent;
@@ -46,31 +101,6 @@
             padding-top: 75px;
             opacity: 0.5;
             color: black;
-        }
-        .flaxbox .extra:hover{
-            background: url(images/pic.jpg) no-repeat center;
-            background-size: auto auto;
-            opacity: 0.5;
-        } 
-        span{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-            color: white;
-            font-weight: 900;
-            opacity: 1.0;
-        }
-        @media (min-width: 481px){
-            body{
-            background: url(images/image2.jpg) no-repeat center;
-            background-size: auto auto;
-            background-color: black;
-        }
-        }
-        @media (max-width: 480px){
-            body{
-            background: url(images/mobile-image.jpg) no-repeat center;
-            background-size: 100% 100%;
-            background-color: black;
         }   
         }    
     </style>
@@ -90,7 +120,7 @@
           <!--Contact Me-->
           <span>Contact Me</span>
         </a>
-        <a href="projects.html">
+        <a href="#">
           <!--Projects Done-->
           <span>Projects</span> 
         </a>
